@@ -20,23 +20,23 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 class Panel1 extends JPanel implements ActionListener {
-	// Treiber f¸r die Datenbak
+	// Treiber f√ºr die Datenbak
 	private String treiber = "com.mysql.cj.jdbc.Driver"; // JDBC= Java Database Connectivity
 	private String url = "jdbc:mysql://127.0.0.1/kunden?user=root";
 	
 	private JButton schreiben   = new JButton("schreiben");
 	private JButton anzeigen    = new JButton("anzeigen");
-	private JButton loeschen    = new JButton("lˆschen");
+	private JButton loeschen    = new JButton("l√∂schen");
 	 
 	
 	private JLabel listeLabName = new JLabel("Name:");
 	private JLabel listeLabOrt  = new JLabel("Ort:");
 	private JLabel nameLab      = new JLabel("Name:");
 	private JLabel ortLab       = new JLabel("Ort:");
-	private JLabel strasseLab   = new JLabel("Straﬂe:");
+	private JLabel strasseLab   = new JLabel("Stra√üe:");
 	private JLabel plzLab 	    = new JLabel("PLZ:");
 	private JLabel eingabe      = new JLabel("ADRESSLISTE");
-	private JLabel fehler       = new JLabel("kein fehler...");
+	private JLabel fehler       = new JLabel("kein fehler");
 	
 	private JComboBox listeName = new JComboBox();
 	private JComboBox listeOrt  = new JComboBox();
@@ -228,7 +228,7 @@ class Panel1 extends JPanel implements ActionListener {
 			fehler = true;
 		// auch strasse und ort sollen nicht leer sein
 		
-		// plz muﬂ Zahl enthalten
+		// plz mu√ü Zahl enthalten
 		if( plz != null)
 		{
 			try {
